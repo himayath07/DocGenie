@@ -1,4 +1,5 @@
-# Smart Document Assistant Using Langchain,Google Generative AI,Hugging Face Transformers and Streamlit
+<<<<<<< HEAD
+# DocGenie - Smart Document Assistant
 
 ## Overview
 
@@ -35,7 +36,7 @@ To set up the project, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/ManiNagaraj2/Smart-Document-Assistant.git
+   git clone https://github.com/himayath07/DocGenie.git
    ```
    
 2. **Install the necessary Python packages using requirements.txt:**
@@ -44,7 +45,7 @@ To set up the project, follow these steps:
    pip install -r requirements.txt
    ```
 
-## Configuraion
+## Configuration
 Set up Google API Key: Replace "YOUR_GOOGLE_API_KEY" in the code with your actual Google API key.
 
 ## Usage
@@ -65,4 +66,3 @@ Speak Answer: Use the "🔊 Speak Answer" button to listen to the response.
 smartdoc.ipynb: Jupyter notebook containing the core functionality for document processing, querying, and summarization.
 
 app.py: Streamlit application for interactive document upload, query, and summarization.
-
