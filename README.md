@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DocGenie - Smart Document Assistant
 
 ## Overview
