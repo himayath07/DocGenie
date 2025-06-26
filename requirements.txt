@@ -1,0 +1,23 @@
+langchain-google-genai==2.0.9
+langchain==0.1.0
+faiss-cpu==1.7.1
+pypdf==3.6.0
+sentence-transformers==2.2.0
+langchain-community== 0.3.17rc1
+pandas==2.0.0
+PyMuPDF==1.22.0
+python-docx==0.8.11
+SpeechRecognition==3.8.1
+gTTS==2.2.3
+pyaudio==0.2.11
+pygame==2.5.0
+transformers==4.32.0
+streamlit==1.18.1
+pdf2docx==0.5.1
+pdf2image==1.16.0
+docx2pdf==0.1.7
+fpdf==1.7.2
+Pillow==9.0.0
+PyPDF2
+huggingface-hub
+youtube-transcript-api

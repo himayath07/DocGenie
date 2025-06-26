@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Interaction Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-file-alt"></i>
+            <span>DocInteract</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="#tools">Tools</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Document Interaction Platform</h1>
+            <p>Transform the way you interact with documents</p>
+            <a href="#upload" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Our Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Document Processing</h3>
+                    <p>Support for PDF, Word, Text, and Images</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Format Conversion</h3>
+                    <p>Convert between different file formats</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Smart Summaries</h3>
+                    <p>AI-powered document summarization</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-microphone"></i>
+                    <h3>Voice Interaction</h3>
+                    <p>Voice commands and text-to-speech</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="tools-section">
+            <h2>Document Processing Tools</h2>
+            <div class="tools-container">
+                <!-- Document Summarization -->
+                <div class="tool-box">
+                    <h3>Document Summarization</h3>
+                    <div class="upload-box" id="summaryDropZone">
+                        <i class="fas fa-file-alt"></i>
+                        <p>Upload document for summarization</p>
+                        <span>or</span>
+                        <button class="upload-btn">Browse Files</button>
+                        <input type="file" hidden id="summaryFileInput" accept=".pdf,.doc,.docx,.txt">
+                    </div>
+                    <div class="summary-result" id="summaryResult"></div>
+                </div>
+
+                <!-- Document Conversion -->
+                <div class="tool-box">
+                    <h3>Document Conversion</h3>
+                    <div class="upload-box" id="conversionDropZone">
+                        <i class="fas fa-exchange-alt"></i>
+                        <p>Upload document to convert</p>
+                        <select id="convertFormat" class="format-select">
+                            <option value="pdf">Convert to PDF</option>
+                            <option value="docx">Convert to DOCX</option>
+                            <option value="txt">Convert to TXT</option>
+                        </select>
+                        <button class="upload-btn">Browse Files</button>
+                        <input type="file" hidden id="conversionFileInput">
+                    </div>
+                    <div class="conversion-result" id="conversionResult"></div>
+                </div>
+
+                <!-- YouTube Video Summarization -->
+                <div class="tool-box">
+                    <h3>YouTube Video Summarization</h3>
+                    <div class="youtube-input">
+                        <i class="fab fa-youtube"></i>
+                        <input type="text" id="youtubeUrl" placeholder="Paste YouTube URL here">
+                        <button class="process-btn" id="summarizeVideo">Summarize Video</button>
+                    </div>
+                    <div class="youtube-result" id="youtubeResult"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ using Streamlit</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
